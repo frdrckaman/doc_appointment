@@ -84,40 +84,33 @@ class CookiePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             if (service == 'add') ...[
-                              Icon(Icons.add,
-                                  color: Color(0xFFD17E50), size: 12.0),
                               Text('Add appointment',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
-                                      fontSize: 12.0))
+                                      color: Color(0xFF00b0ff),
+                                      fontSize: 16.0,fontWeight: FontWeight.bold))
                             ],
                             if (service == 'list') ...[
-                              Icon(Icons.add,
-                                  color: Color(0xFFD17E50), size: 12.0),
                               Text('My appointments',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
-                                      fontSize: 12.0))
+                                      color: Color(0xFF00b0ff),
+                                      fontSize: 16.0,fontWeight: FontWeight.bold))
                             ],
                             if (service == 'hospital') ...[
-                              Icon(Icons.add,
-                                  color: Color(0xFFD17E50), size: 12.0),
                               Text('Nearby Hospitals',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
-                                      fontSize: 12.0))
+                                      color: Color(0xFF00b0ff),
+                                      fontSize: 16.0,fontWeight: FontWeight.bold))
                             ],
                             if (service == 'news') ...[
-                              Icon(Icons.add,
-                                  color: Color(0xFFD17E50), size: 12.0),
                               Text('News & Tips',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
-                                      fontSize: 12.0))
+                                      color: Color(0xFF00b0ff),
+                                      fontSize: 16.0,fontWeight: FontWeight.bold),
+                              )
                             ],
                           ]))
                 ]))));

@@ -29,6 +29,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   flutter_svg: ^0.19.1
+  flutter_spinkit: ^4.1.2
+  introduction_screen: ^1.0.9
 
 dev_dependencies:
   flutter_test:
@@ -66,7 +68,32 @@ flutter:
   fonts:
     - family: Schyler
       fonts:
+        - asset: assets/fonts/BLKCHCRY.TTF
+
+    - family: VarelaRound
+      fonts:
         - asset: assets/VarelaRound-Regular.ttf
+
+    - family: Canterbury
+      fonts:
+        - asset: assets/fonts/Canterbury.ttf
+
+    - family: EnglishTowne
+      fonts:
+        - asset: assets/fonts/EnglishTowne.ttf
+
+    - family: OldEnglishFive
+      fonts:
+        - asset: assets/fonts/OldEnglishFive.ttf
+
+    - family: BLKCHCRY
+      fonts:
+        - asset: assets/fonts/BLKCHCRY.TTF
+
+    - family: Brigitha
+      fonts:
+        - asset: assets/fonts/BrigithaReguler.ttf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

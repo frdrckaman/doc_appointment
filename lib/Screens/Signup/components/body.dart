@@ -10,6 +10,7 @@ import 'package:doctor_app/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -19,16 +20,22 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "SIGNUP",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "Sign up",
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 45.0,color: Color(0xFF00b0ff),fontFamily: 'OldEnglishFive'),
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.01),
             SvgPicture.asset(
-              "assets/icons/signup.svg",
-              height: size.height * 0.35,
+              "assets/icons/intro.svg",
+              height: size.height * 0.32,
             ),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "Your First Name",
+              icon: Icons.person,
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText: "Your Phone Number",
+              icon: Icons.phone,
               onChanged: (value) {},
             ),
             RoundedPasswordField(
@@ -38,7 +45,7 @@ class Body extends StatelessWidget {
               text: "SIGNUP",
               press: () {},
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.01),
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
@@ -52,24 +59,24 @@ class Body extends StatelessWidget {
                 );
               },
             ),
-            OrDivider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SocalIcon(
-                  iconSrc: "assets/icons/facebook.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/twitter.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
-                ),
-              ],
-            )
+            // OrDivider(),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: <Widget>[
+            //     SocalIcon(
+            //       iconSrc: "assets/icons/facebook.svg",
+            //       press: () {},
+            //     ),
+            //     SocalIcon(
+            //       iconSrc: "assets/icons/twitter.svg",
+            //       press: () {},
+            //     ),
+            //     SocalIcon(
+            //       iconSrc: "assets/icons/google-plus.svg",
+            //       press: () {},
+            //     ),
+            //   ],
+            // )
           ],
         ),
       ),

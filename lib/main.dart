@@ -1,3 +1,4 @@
+import 'package:doctor_app/Screens/introduction/introduction_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/bottom_bar.dart';
 import 'package:doctor_app/dashboard_page.dart';
@@ -39,10 +40,10 @@ class _MyHomePageState extends State<MyHomePage>
         elevation: 0.0,
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color(0xFF545D68)),
+          icon: Icon(Icons.dashboard, color: Color(0xFF545D68)),
           onPressed: () {},
         ),
-        title: Text('Pickup',
+        title: Text('Dashboard',
             style: TextStyle(
                 fontFamily: 'Varela',
                 fontSize: 20.0,
@@ -62,12 +63,13 @@ class _MyHomePageState extends State<MyHomePage>
               style: TextStyle(
                   fontFamily: 'Varela',
                   fontSize: 42.0,
+                  color: Color(0xFF00b0ff),
                   fontWeight: FontWeight.bold)),
           SizedBox(height: 15.0),
           TabBar(
               controller: _tabController,
               indicatorColor: Colors.transparent,
-              labelColor: Color(0xFFC88D67),
+              labelColor: Color(0xFF00b0ff),
               isScrollable: true,
               labelPadding: EdgeInsets.only(right: 45.0),
               unselectedLabelColor: Color(0xFFCDCDCD),
@@ -94,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage>
         ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {},
-        backgroundColor: Color(0xFFF17532),
+        backgroundColor: Color(0xFF00b0ff),
         child: Icon(Icons.local_hospital_outlined),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

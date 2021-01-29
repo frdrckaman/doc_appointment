@@ -42,7 +42,7 @@ class CookieDetail extends StatelessWidget {
                       fontFamily: 'Varela',
                       fontSize: 42.0,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFF17532))
+                      color: Color(0xFF00b0ff))
             ),
           ),
             SizedBox(height: 15.0),
@@ -61,7 +61,7 @@ class CookieDetail extends StatelessWidget {
                       fontFamily: 'Varela',
                       fontSize: 22.0,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFF17532))),
+                      color: Color(0xFF00b0ff))),
             ),
             SizedBox(height: 10.0),
             Center(
@@ -91,7 +91,7 @@ class CookieDetail extends StatelessWidget {
                 height: 50.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25.0),
-                  color: Color(0xFFF17532)
+                  color: Color(0xFF00b0ff)
                 ),
                 child: Center(
                   child: Text('Add to cart',
@@ -109,8 +109,8 @@ class CookieDetail extends StatelessWidget {
       ),
 
       floatingActionButton: FloatingActionButton(onPressed: () {},
-      backgroundColor: Color(0xFFF17532),
-      child: Icon(Icons.fastfood),
+      backgroundColor: Color(0xFF00b0ff),
+      child: Icon(Icons.local_hospital_outlined),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

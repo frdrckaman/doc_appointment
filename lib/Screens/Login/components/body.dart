@@ -21,17 +21,18 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "LOGIN",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "Login",
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 45.0,color: Color(0xFF00b0ff),fontFamily: 'OldEnglishFive'),
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
-              "assets/icons/login.svg",
+              "assets/icons/intro.svg",
               height: size.height * 0.35,
             ),
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "Your Phone Number",
+              icon: Icons.phone,
               onChanged: (value) {},
             ),
             RoundedPasswordField(
