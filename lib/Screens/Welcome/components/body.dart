@@ -17,8 +17,8 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO DR. APP",
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 29.0,color: Color(0xFF00b0ff)),
+              "Welcome to Dr.app",
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32.0,color: Color(0xFF00b0ff),fontFamily: 'OldEnglishFive'),
             ),
             SizedBox(height: size.height * 0.05),
             SvgPicture.asset(

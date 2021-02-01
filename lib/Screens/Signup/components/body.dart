@@ -9,6 +9,8 @@ import 'package:doctor_app/components/rounded_input_field.dart';
 import 'package:doctor_app/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../main.dart';
+
 class Body extends StatelessWidget {
 
   @override
@@ -43,7 +45,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "SIGNUP",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return MyHomePage();
+                    },
+                  ),
+                );
+              },
             ),
             SizedBox(height: size.height * 0.01),
             AlreadyHaveAnAccountCheck(

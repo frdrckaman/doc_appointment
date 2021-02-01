@@ -1,3 +1,4 @@
+import 'package:doctor_app/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:introduction_screen/introduction_screen.dart';
@@ -31,7 +32,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => MyHomePage()),
+      MaterialPageRoute(builder: (_) => WelcomeScreen()),
     );
   }
 
@@ -74,7 +75,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           title: "Kids and teens",
           body:
           "Kids and teens can track their stocks 24/7 and place trades that you approve.",
-          image: _buildImage('hospital'),
+          image: _buildImage('hospital3'),
           decoration: pageDecoration,
         ),
         PageViewModel(
@@ -106,7 +107,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               Text(" to edit a post", style: bodyStyle),
             ],
           ),
-          image: _buildImage('dash1'),
+          image: _buildImage('hospital4'),
           decoration: pageDecoration,
         ),
       ],

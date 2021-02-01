@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home: App(),
     );
   }
 }
@@ -61,8 +61,8 @@ class _MyHomePageState extends State<MyHomePage>
           SizedBox(height: 15.0),
           Text('Dr. Appointment',
               style: TextStyle(
-                  fontFamily: 'Varela',
-                  fontSize: 42.0,
+                  fontFamily: 'OldEnglishFive',
+                  fontSize: 34.0,
                   color: Color(0xFF00b0ff),
                   fontWeight: FontWeight.bold)),
           SizedBox(height: 15.0),

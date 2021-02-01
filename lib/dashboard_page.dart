@@ -43,10 +43,10 @@ class CookiePage extends StatelessWidget {
         child: InkWell(
             onTap: () {
               Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => CookieDetail(
+                  MaterialPageRoute(builder: (context) => ServiceDetail(
                     assetPath: imgPath,
-                    cookieprice:price,
-                    cookiename: name
+                    serviceprice:price,
+                    servicename: name
                   )));
             },
             child: Container(
@@ -112,7 +112,13 @@ class CookiePage extends StatelessWidget {
                                       fontSize: 16.0,fontWeight: FontWeight.bold),
                               )
                             ],
-                          ]))
-                ]))));
+                          ],
+                      ),
+                  ),
+                ],
+                ),
+            ),
+        ),
+    );
   }
 }
